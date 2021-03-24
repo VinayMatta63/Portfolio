@@ -1,0 +1,46 @@
+#project {
+}
+.about {
+  display: flex;
+  height: 180px;
+  width: 90%;
+  border-bottom: rgba(7, 109, 87, 0.377) 1px solid;
+}
+.about__head {
+  flex: 0.3;
+  margin-left: 2%;
+  margin-top: 3%;
+  font-size: 1.5rem;
+  text-underline-offset: 10px;
+  text-decoration: underline rgb(7, 109, 87) 2px;
+}
+.about__body {
+  margin-top: 3%;
+  line-height: 1.7;
+  flex: 0.7;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+}
+.about__name {
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1020px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__name {
+    font-size: 1.15rem;
+  }
+  .about__body {
+    font-size: 0.9rem;
+    padding-bottom: 2%;
+  }
+  .about__head {
+    margin-top: 5%;
+  }
+} ;

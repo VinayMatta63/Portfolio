@@ -1,0 +1,71 @@
+#project {
+}
+.body {
+  width: 100%;
+  margin-top: 3%;
+  top: 100vh;
+  position: absolute;
+}
+.body > h1 {
+  text-align: center;
+  color: rgb(10, 139, 111);
+  margin-bottom: 10px;
+}
+
+.body > h1 > span {
+  border-bottom: 5px solid rgb(7, 109, 87);
+  padding-bottom: 12px;
+}
+.body__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.body__skills {
+  display: flex;
+  height: 420px;
+  width: 90%;
+  border-bottom: rgba(7, 109, 87, 0.377) 1px solid;
+}
+
+.body__barHead {
+  flex: 0.3;
+  margin-left: 2%;
+  margin-top: 5%;
+  font-size: 1.5rem;
+  text-underline-offset: 10px;
+  text-decoration: underline rgb(7, 109, 87) 2px;
+}
+.body__barBody {
+  margin-top: 3%;
+  line-height: 1.7;
+  flex: 0.7;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@media (max-width: 1020px) {
+  .body__skills {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .about__name {
+    margin-top: 1%;
+    font-size: 1.15rem;
+  }
+  .about__body {
+    font-size: 1rem;
+  }
+  .about__head {
+    margin-top: 8%;
+  }
+  .body__barBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} ;

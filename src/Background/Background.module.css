@@ -1,0 +1,73 @@
+#project {
+}
+.background {
+  background-image: url("https://images.unsplash.com/photo-1546900703-cf06143d1239?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=991&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+.background__contents {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background__fade {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.582);
+  height: 100vh;
+  width: 100vw;
+}
+.background__text {
+  position: relative;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+.background__text > p > span {
+  color: rgb(11, 252, 200);
+}
+.background__text > button {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 22px;
+  border: 3px solid #fff;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+  outline-width: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.background__text > button:hover {
+  background-color: rgba(45, 202, 168, 0.897);
+  border-color: rgba(45, 202, 168, 0.897);
+}
+
+@media (max-width: 580px) {
+  .background__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .background__text > button {
+    margin-top: 10px;
+    padding: 4px 12px;
+    border: 3px solid #fff;
+    font-size: 0.8rem;
+  }
+}

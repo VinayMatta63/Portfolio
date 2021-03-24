@@ -1,0 +1,39 @@
+#project {
+}
+.project {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project > a > img {
+  height: 280px;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 40%;
+  margin-left: 1%;
+  margin-top: 1%;
+  transition: all 0.4s;
+}
+
+.project > a > img:hover {
+  transform: scale(1.06);
+}
+.project__cover {
+  width: 50vw;
+  height: 60vh;
+  left: 30vw;
+  position: absolute;
+  background-color: teal;
+}
+
+@media (max-width: 1020px) {
+  .project > a > img {
+    width: 100%;
+    max-width: 260px;
+    max-height: 200px;
+    margin-left: 0;
+    margin-bottom: 2%;
+  }
+}

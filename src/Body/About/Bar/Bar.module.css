@@ -1,0 +1,22 @@
+#project {
+}
+.bar {
+  height: 35px;
+  width: 650px;
+  margin-bottom: 3px;
+  background-color: rgba(156, 146, 146, 0.87);
+}
+
+.bar__filled {
+  height: 35px;
+}
+
+@media (max-width: 1020px) {
+  .bar__cover {
+    width: max-content;
+  }
+  .bar {
+    margin-left: 5%;
+    width: 275px;
+  }
+} ;
